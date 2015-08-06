@@ -1,0 +1,4 @@
+
+# Ruby
+# Use new version of ruby installed via homebrew
+export PATH="/usr/local/opt/ruby/bin:$PATH"

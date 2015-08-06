@@ -1,0 +1,7 @@
+
+# Android Dev
+export ANDROID_HOME=/Users/aallison/Workspace/android/sdk
+
+ANDROID_TOOLS=$ANDROID_HOME/tools
+ANDROID_PTOOLS=$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME:$ANDROID_TOOLS:$ANDROID_PTOOLS

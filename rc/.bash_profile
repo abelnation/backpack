@@ -7,12 +7,12 @@ export PATH="/usr/local/bin:${PATH}"
 
 echo "Loading configs"
 for f in ~/.bash/config/*.rc; do
-	echo "Reading $f..."
+	echo "  $f..."
 	source $f
 done
 
 echo "Loading aliases"
 for f in ~/.bash/aliases/*.alias; do
-	echo "Reading $f..."
+	echo "  $f..."
 	source $f
 done

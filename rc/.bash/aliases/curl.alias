@@ -1,0 +1,2 @@
+
+alias curljson="curl -H 'Content-Type: application/json'"

@@ -1,0 +1,5 @@
+
+# http://dumpsterventures.com/jason/httpry/
+# brew install httpry
+
+alias httpdump="sudo httpry -i $(route get 0.0.0.0 2>/dev/null | awk '/interface: / {print $2}')"

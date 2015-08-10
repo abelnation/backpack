@@ -1,0 +1,35 @@
+
+alias psall='ps -auxefw'
+
+# kill
+#
+# hang up
+alias killhup='kill -s HUP'
+# interrupt
+alias killint='kill -s INT'
+# quit
+alias killquit='kill -s QUIT'
+# non-catchable, non-ignorable kill
+alias killkill='kill -s KILL'
+# software termination signal
+alias killter='kill -s TERM'
+
+# tcpdump
+#
+alias tcpdumplist='sudo tcpdump -D'
+alias tdlist='tcpdumplist'
+
+alias tcpdumplisten='sudo tcpdump -i any -X -s 0'
+alias tdlisten=tcpdumplisten
+
+# top
+# 
+alias topcpu='top -o cpu'
+alias topmem='top -o mem'
+
+# tar
+# 
+# tarcreate <tarfilename> <dir to archive>
+alias tarcreate='tar -czvf'
+# tarextract <tarfilename> [<dest>]
+alias tarextract='tar -xzvf'

@@ -1,6 +1,11 @@
 
 alias psall='ps -auxefw'
 
+# time
+# 
+alias nowms="python -c 'import time; print int(time.time() * 1000)'"
+alias now=nowms
+
 # kill
 #
 # hang up

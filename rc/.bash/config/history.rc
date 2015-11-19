@@ -1,0 +1,3 @@
+
+# colon-separated list of commands to omit
+HISTIGNORE='sudo vim /etc/hosts'

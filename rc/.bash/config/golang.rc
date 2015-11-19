@@ -1,0 +1,7 @@
+
+# Points to golang install dir
+# Installed via homebrew
+export GOROOT=/usr/local/go
+
+# Dir where go src projects are located
+export GOPATH=/Users/aallison/Workspace/go/

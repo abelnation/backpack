@@ -1,2 +1,3 @@
 
 alias curljson="curl -H 'Content-Type: application/json'"
+alias jsoncurl=curljson

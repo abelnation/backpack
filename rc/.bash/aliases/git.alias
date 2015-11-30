@@ -27,3 +27,4 @@ alias gtheirs="git checkout --theirs"
 alias gours="git checkout --ours"
 
 alias gbd="git branch -d"
+alias gbp="git for-each-ref --sort='-authordate:iso8601' --format=' %(authordate:iso8601)%09%(refname)' refs/heads | sort"

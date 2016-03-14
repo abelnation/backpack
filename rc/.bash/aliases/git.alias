@@ -20,6 +20,13 @@ alias gs='git status'
 alias gdstage='git diff --cached'
 alias gds=gdstage
 
+alias gfe='git submodule foreach'
+alias gdsub='git diff --submodule'
+alias gsubpush='git push --recurse-submodules=check'
+alias gsubpushforce='git push --recurse-submodules=on-demand'
+alias gsubpull='git submodule update --merge'
+alias gsubupdate=gsubpull
+
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias glogdiff='glog -p'
 

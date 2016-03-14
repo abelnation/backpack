@@ -1,8 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/aallison/.oh-my-zsh
 
-source ~/.bash_profile
-
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -57,6 +55,8 @@ plugins=(git jsontools mvn docker)
 
 export PATH="/Users/aallison/.nvm/v0.10.33/bin:/usr/local/opt/ruby/bin:/usr/local/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/bin:~/abelbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/go/bin:/Users/aallison/Workspace/android/sdk:/Users/aallison/Workspace/android/sdk/tools:/Users/aallison/Workspace/android/sdk/platform-tools:/Users/aallison/Workspace/growth/switchboard/scripts/rjarsrc//bin:/usr/local/opt/go/libexec/bin:/Users/aallison/Workspace/scala/scala-latest/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
+
+source ~/.bash_profile
 
 source $ZSH/oh-my-zsh.sh
 

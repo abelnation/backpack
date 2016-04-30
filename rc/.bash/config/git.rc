@@ -1,0 +1,12 @@
+
+# configure git editor to be
+# 1) mvim if exists
+# 2) else, vim
+
+command -v mvim >/dev/null 2>&1
+if [ $? -eq 0 ]; then
+	export EDITOR=mvim
+else
+	export EDITOR=vim
+fi
+

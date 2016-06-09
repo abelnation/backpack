@@ -53,8 +53,19 @@ plugins=(git jsontools mvn docker)
 
 # User configuration
 
-export PATH="/Users/aallison/.nvm/v0.10.33/bin:/usr/local/opt/ruby/bin:/usr/local/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/bin:~/abelbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/go/bin:/Users/aallison/Workspace/android/sdk:/Users/aallison/Workspace/android/sdk/tools:/Users/aallison/Workspace/android/sdk/platform-tools:/Users/aallison/Workspace/growth/switchboard/scripts/rjarsrc//bin:/usr/local/opt/go/libexec/bin:/Users/aallison/Workspace/scala/scala-latest/bin"
-# export MANPATH="/usr/local/man:$MANPATH"
+export PATH=""
+
+# Application specific paths
+export PATH="${PATH}:/Users/$USER/.nvm/v0.10.33/bin"
+export PATH="${PATH}:/usr/local/opt/ruby/bin"
+
+# Default path locations
+export PATH="${PATH}:/usr/local/bin"
+export PATH="${PATH}:/usr/bin"
+export PATH="${PATH}:/bin"
+export PATH="${PATH}:/usr/sbin"
+export PATH="${PATH}:/sbin"
+export PATH="${PATH}:/opt/X11/bin"
 
 source ~/.bash_profile
 
@@ -85,5 +96,3 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export NVM_DIR="/Users/aallison/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

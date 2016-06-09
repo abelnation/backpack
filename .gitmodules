@@ -16,3 +16,6 @@
 [submodule "rc/.vim/bundle/delimitMate"]
 	path = rc/.vim/bundle/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
+[submodule "rc/.vim/bundle/vim-glsl"]
+	path = rc/.vim/bundle/vim-glsl
+	url = https://github.com/tikhomirov/vim-glsl.git

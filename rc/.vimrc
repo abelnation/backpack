@@ -287,7 +287,10 @@ autocmd FileType javascript nnoremap <buffer> <Leader>f :Esformatter<CR>
 autocmd FileType javascript vnoremap <buffer> <Leader>f :EsformatterVisual<CR>
 
 " Ack
-" map <c-f> :Ack 
+map <Leader>f :Ack 
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
 
 " vim-move
 let g:move_key_modifier = 'C'

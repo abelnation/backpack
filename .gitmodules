@@ -19,3 +19,21 @@
 [submodule "rc/.vim/bundle/vim-glsl"]
 	path = rc/.vim/bundle/vim-glsl
 	url = https://github.com/tikhomirov/vim-glsl.git
+[submodule "rc/.vim/bundle/YouCompleteMe"]
+	path = rc/.vim/bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "rc/.vim/bundle/vim-easy-align"]
+	path = rc/.vim/bundle/vim-easy-align
+	url = https://github.com/junegunn/vim-easy-align.git
+[submodule "rc/.vim/bundle/vim-move"]
+	path = rc/.vim/bundle/vim-move
+	url = https://github.com/matze/vim-move.git
+[submodule "rc/.vim/bundle/vim-smooth-scroll"]
+	path = rc/.vim/bundle/vim-smooth-scroll
+	url = https://github.com/terryma/vim-smooth-scroll.git
+[submodule "rc/.vim/bundle/ack.vim"]
+	path = rc/.vim/bundle/ack.vim
+	url = https://github.com/mileszs/ack.vim.git
+[submodule "rc/.vim/bundle/vim-javascript"]
+	path = rc/.vim/bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git

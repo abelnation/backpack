@@ -182,7 +182,7 @@ set ignorecase				" searches are case insensitive
 set smartcase				" ... unless they contain a capital letter
 
 " make <esc> clear search results
-nnoremap <esc> :noh<return><esc>
+nnoremap <Space> :noh<return><esc>
 
 " key sequence kj is mapped to esc for getting out of insert mode
 inoremap kj <Esc>

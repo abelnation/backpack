@@ -48,6 +48,9 @@ elseif &t_Co == 256
     hi CursorLine ctermbg=darkred ctermfg=white 
 endif
 
+" show line numbers
+set number
+
 " tweak iterm cursors
 " Change cursor shape between insert and normal mode in iTerm2.app
 if $TERM_PROGRAM =~ "iTerm"
@@ -128,6 +131,11 @@ nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
 
+" split buffer shortcut similar to iterm
+" https://technotales.wordpress.com/2010/04/29/vim-splits-a-guide-to-doing-exactly-what-you-want/
+nmap <leader>d :rightbelow split<CR>
+nmap <leader>D :rightbelow vsplit<CR>
+
 " Set to auto read when a file is changed from the outside
 set autoread
 
@@ -159,6 +167,9 @@ set smartcase
 " set backspace=2
 set backspace=indent,eol,start
 
+" backspace over 4-space tabs
+set softtabstop=4
+
 " Showing invisible characters
 set list
 set listchars=tab:▸\  " eol:¬ Use the same symbols as TextMate for tabstops and EOLs
@@ -189,8 +200,8 @@ inoremap kj <Esc>
 
 " Status line improvements
 " set statusline=%f%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
-set laststatus=2 
-set ruler
+" set laststatus=2 
+" set ruler
 
 "
 " Plugins
@@ -207,12 +218,15 @@ let g:ctrlp_custom_ignore = {
   \ }
 let g:ctrlp_extensions = ['tag']
 :map <c-t> :CtrlPTag<cr>
+:map <c-p> :CtrlPMRUFiles<CR>
 
 " show hidden files (e.g. .gitignore)
 let g:ctrlp_show_hidden = 1
 
 " configure height and num results
 let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:25,results:25'
+
+
 
 
 " NerdTree

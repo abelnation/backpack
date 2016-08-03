@@ -19,9 +19,6 @@
 [submodule "rc/.vim/bundle/vim-glsl"]
 	path = rc/.vim/bundle/vim-glsl
 	url = https://github.com/tikhomirov/vim-glsl.git
-[submodule "rc/.vim/bundle/YouCompleteMe"]
-	path = rc/.vim/bundle/YouCompleteMe
-	url = https://github.com/Valloric/YouCompleteMe.git
 [submodule "rc/.vim/bundle/vim-easy-align"]
 	path = rc/.vim/bundle/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align.git

@@ -37,3 +37,21 @@
 [submodule "rc/.vim/bundle/YouCompleteMe"]
 	path = rc/.vim/bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "rc/.vim/bundle/syntastic"]
+	path = rc/.vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "rc/.vim/bundle/typescript-vim"]
+	path = rc/.vim/bundle/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
+[submodule "rc/.vim/bundle/vim-surround"]
+	path = rc/.vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "rc/.vim/bundle/vim-jinja"]
+	path = rc/.vim/bundle/vim-jinja
+	url = https://github.com/lepture/vim-jinja.git
+[submodule "rc/.vim/bundle/vim-mustache-handlebars"]
+	path = rc/.vim/bundle/vim-mustache-handlebars
+	url = git@github.com:mustache/vim-mustache-handlebars.git
+[submodule "rc/.vim/bundle/vim-go"]
+	path = rc/.vim/bundle/vim-go
+	url = git@github.com:fatih/vim-go.git

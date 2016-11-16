@@ -19,6 +19,7 @@ alias gch='git checkout'
 alias gs='git status'
 alias gdstage='git diff --cached'
 alias gds=gdstage
+alias gdf='git diff --name-only'
 
 alias gfe='git submodule foreach'
 alias gdsub='git diff --submodule'

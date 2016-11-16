@@ -1,4 +1,4 @@
 
 # wraps node with rlwrap to provide command history across sessions
-echo "Wrapping node with rlwrap"
-alias node='env NODE_NO_READLINE=1 rlwrap node'
+# echo "Wrapping node with rlwrap"
+# alias node='env NODE_NO_READLINE=1 rlwrap node'

@@ -1,6 +1,6 @@
 
 " To disable a plugin, add it's bundle name to the following list
-let g:pathogen_disabled = []
+let g:pathogen_disabled = [ 'minibufexpl' ]
 
 " for some reason the csscolor plugin is very slow when run on the terminal
 " but not in GVim, so disable it if no GUI is running
@@ -30,6 +30,9 @@ set encoding=utf-8
 set showcmd						" display incomplete commands
 filetype plugin indent on		" load file type plugins + indentation
 
+" Disable swp files
+set noswapfile
+
 " Disable arrow keys for training
 noremap <Up> <NOP>
 noremap <Down> <NOP>
@@ -48,8 +51,6 @@ elseif &t_Co == 256
     hi CursorLine ctermbg=darkred ctermfg=white 
 endif
 
-" show line numbers
-set number
 
 " tweak iterm cursors
 " Change cursor shape between insert and normal mode in iTerm2.app
@@ -71,6 +72,7 @@ let mapleader = ","
 
 " Search and replace word under cursor
 :nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
+:nnoremap <Leader>S :%s/<C-r><C-w>//g<Left><Left>
 
 " disable auto-comment after newline when in a commented line
 autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
@@ -203,7 +205,13 @@ inoremap kj <Esc>
 " set laststatus=2 
 " set ruler
 
-"
+" show line numbers
+set number
+
+" tweak line number color
+hi LineNr guifg=#404040
+
+
 " Plugins
 "
 
@@ -225,8 +233,6 @@ let g:ctrlp_show_hidden = 1
 
 " configure height and num results
 let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:25,results:25'
-
-
 
 
 " NerdTree
@@ -294,11 +300,11 @@ map gd :MBEbd<cr>
 map <leader>b :MBEToggle<cr>
 
 " EsFormatter
-let g:esformatter_exec = fnamemodify("./node_modules/.bin/esformatter", ':p')
+" let g:esformatter_exec = fnamemodify("./node_modules/.bin/esformatter", ':p')
 
 " will run esformatter after pressing <leader> followed by the 'e' and 's' keys
-autocmd FileType javascript nnoremap <buffer> <Leader>f :Esformatter<CR>
-autocmd FileType javascript vnoremap <buffer> <Leader>f :EsformatterVisual<CR>
+" autocmd FileType javascript nnoremap <buffer> <Leader>f :Esformatter<CR>
+" autocmd FileType javascript vnoremap <buffer> <Leader>f :EsformatterVisual<CR>
 
 " Ack
 map <Leader>f :Ack 
@@ -315,3 +321,18 @@ noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 5, 2)<CR>
 noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 5, 2)<CR>
 noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 5, 4)<CR>
 noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 5, 4)<CR>
+
+" syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_javascript_checkers = [ 'eslint' ]
+
+" vim-jinja
+au BufNewFile,BufRead *.html,*.htm,*.shtml,*.stm,*.tpl set ft=jinja

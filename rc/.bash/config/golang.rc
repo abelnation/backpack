@@ -1,7 +1,10 @@
 
 # Points to golang install dir
 # Installed via homebrew
-export GOROOT=/usr/local/go
+export GOROOT=/usr/local/opt/go/libexec
 
 # Dir where go src projects are located
-export GOPATH=/Users/aallison/Workspace/go/
+export GOPATH=${HOME}/Workspace/go
+
+# Go bin dir to PATH
+export PATH=$PATH:${GOROOT}/bin

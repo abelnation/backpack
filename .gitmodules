@@ -16,6 +16,18 @@
 [submodule "rc/.vim/bundle/delimitMate"]
 	path = rc/.vim/bundle/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
+[submodule "rc/.vim/bundle/editorconfig-vim"]
+	path = rc/.vim/bundle/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim
+[submodule "rc/.vim/bundle/minibufexpl.vim"]
+	path = rc/.vim/bundle/minibufexpl.vim
+	url = https://github.com/fholgado/minibufexpl.vim.git
+[submodule "rc/.vim/bundle/tcomment_vim"]
+	path = rc/.vim/bundle/tcomment_vim
+	url = https://github.com/tomtom/tcomment_vim.git
+[submodule "rc/.vim/bundle/vim-airline"]
+	path = rc/.vim/bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
 [submodule "rc/.vim/bundle/vim-glsl"]
 	path = rc/.vim/bundle/vim-glsl
 	url = https://github.com/tikhomirov/vim-glsl.git
@@ -51,7 +63,7 @@
 	url = https://github.com/lepture/vim-jinja.git
 [submodule "rc/.vim/bundle/vim-mustache-handlebars"]
 	path = rc/.vim/bundle/vim-mustache-handlebars
-	url = git@github.com:mustache/vim-mustache-handlebars.git
+	url = https://github.com/mustache/vim-mustache-handlebars.git
 [submodule "rc/.vim/bundle/vim-go"]
 	path = rc/.vim/bundle/vim-go
-	url = git@github.com:fatih/vim-go.git
+	url = https://github.com/fatih/vim-go.git

@@ -67,9 +67,10 @@ export PATH="${PATH}:/usr/sbin"
 export PATH="${PATH}:/sbin"
 export PATH="${PATH}:/opt/X11/bin"
 
-source ~/.bash_profile
-
 source $ZSH/oh-my-zsh.sh
+
+# Override with our custom rc's
+source ~/.bash_profile
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8

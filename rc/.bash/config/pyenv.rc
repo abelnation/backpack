@@ -1,2 +1,4 @@
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+export PYTHONSTARTUP=~/.pythonrc

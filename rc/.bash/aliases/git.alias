@@ -12,15 +12,25 @@ alias sshkeygen='ssh-keygen -t rsa -b 4096 -C "aallison@yahoo-inc.com"'
 alias ga='git add'
 alias gai='git add -i'
 
+alias gcempty='git commit --allow-empty'
+
+# Pull
 alias gl='git pull --ff-only'
 alias gpl='git pull --ff-only'
+alias gprm='git pull --rebase origin master'
+
+# PUsh
 alias gpsh='git push'
 alias gch='git checkout'
+
+# Diff/Status
 alias gs='git status'
 alias gdstage='git diff --cached'
 alias gds=gdstage
+alias gdm='git diff master'
 alias gdf='git diff --name-only'
 
+# Submodules
 alias gfe='git submodule foreach'
 alias gdsub='git diff --submodule'
 alias gsubpush='git push --recurse-submodules=check'
@@ -28,9 +38,21 @@ alias gsubpushforce='git push --recurse-submodules=on-demand'
 alias gsubpull='git submodule update --merge'
 alias gsubupdate=gsubpull
 
-alias glog="git log --graph --pretty=format:'%C(yellow)%h%Creset -%C(auto)%d%Creset %s %C(dim yellow)(%cd) %C(cyan)<%an>%Creset' --abbrev-commit --date=local --all"
+# Rebasing
+alias grm='git rebase --onto master --root'
+alias grbm=grm
+
+alias glog="git --no-pager log --graph --pretty=format:'%C(yellow)%h%Creset -%C(auto)%d%Creset %s %C(dim yellow)(%cd) %C(cyan)<%an>%Creset' --abbrev-commit --date=local --all -n 16"
+
+alias glogless="git log --graph --pretty=format:'%C(yellow)%h%Creset -%C(auto)%d%Creset %s %C(dim yellow)(%cd) %C(cyan)<%an>%Creset' --abbrev-commit --date=local --all"
+
 alias glogalign="git log --graph --pretty=format:'%C(yellow)%h%Creset -%C(auto)%d%Creset %<(60,trunc)%s %C(dim yellow)(%cd) %C(cyan)<%an>%Creset' --abbrev-commit --date=local --all"
-alias glogdiff='glog -p'
+
+alias glogn="git --no-pager log --graph --pretty=format:'%C(yellow)%h%Creset -%C(auto)%d%Creset %s %C(dim yellow)(%cd) %C(cyan)<%an>%Creset' --abbrev-commit --date=local --all -n"
+
+alias glogdiff="git log --graph --pretty=format:'%C(yellow)%h%Creset -%C(auto)%d%Creset %s %C(dim yellow)(%cd) %C(cyan)<%an>%Creset' --abbrev-commit --date=local -p"
+
+alias gloggrep='glogdiff -G'
 
 alias gtheirs="git checkout --theirs"
 alias gours="git checkout --ours"
@@ -38,6 +60,7 @@ alias gours="git checkout --ours"
 alias gbd="git branch -d"
 alias gbp="git for-each-ref --sort='-authordate:iso8601' --format=' %(authordate:iso8601)%09%(refname)' refs/heads | sort"
 
+alias gtrack="git branch -u"
 
 ## Included in oh-my-zsh git plugin
 # # Query/use custom command for `git`.

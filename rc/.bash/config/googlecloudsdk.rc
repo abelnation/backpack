@@ -1,5 +1,0 @@
-
-export GOOGLE_SDK_HOME="/Users/aallison/Workspace/google-cloud-sdk"
-
-# The next line updates PATH for the Google Cloud SDK.
-export PATH="${GOOGLE_SDK_HOME}/bin:$PATH"

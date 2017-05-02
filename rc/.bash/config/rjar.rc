@@ -1,3 +1,0 @@
-# Rjar recursive jar tool
-export RJAR_HOME=/Users/aallison/Workspace/growth/switchboard/scripts/rjarsrc/
-export PATH=$PATH:$RJAR_HOME/bin

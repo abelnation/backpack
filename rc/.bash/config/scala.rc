@@ -1,6 +1,0 @@
-
-export SCALA_HOME=/usr/local/Cellar/scala
-export PATH=${PATH}:${SCALA_HOME}
-
-export ACTIVATOR_HOME=${HOME}/Workspace/activator/bin
-export PATH=${PATH}:${ACTIVATOR_HOME}

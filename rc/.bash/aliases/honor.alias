@@ -1,0 +1,3 @@
+
+# alias sandboxdb="mycli -u root -D sonasandboxdb"
+alias sandboxdb="mysql -u root --auto-rehash -D sonasandboxdb"

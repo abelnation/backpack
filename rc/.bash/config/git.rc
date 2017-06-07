@@ -10,3 +10,8 @@ else
 	export EDITOR=vim
 fi
 
+# Honor specific
+git config --global user.name "Abel Allison"
+git config --global user.email "abel@joinhonor.com"
+
+git config --global merge.ff "only"

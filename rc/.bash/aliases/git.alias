@@ -22,6 +22,7 @@ alias gprm='git pull --rebase origin master'
 # PUsh
 alias gpsh='git push'
 alias gch='git checkout'
+alias gm='git checkout master'
 
 # Diff/Status
 alias gs='git status'

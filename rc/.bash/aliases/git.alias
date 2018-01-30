@@ -14,12 +14,17 @@ alias gai='git add -i'
 
 alias gcempty='git commit --allow-empty'
 
+# Branches
+alias glb="git branch --no-color -vv | cut -c 3- | awk '\$3 !~/\\[/ { print \$1 }' | grep -v master"
+
 # Pull
-alias gl='git pull --ff-only'
 alias gpl='git pull --ff-only'
+alias gl=gpl
+alias gp=gpl
+
 alias gprm='git pull --rebase origin master'
 
-# PUsh
+# Push
 alias gpsh='git push'
 alias gch='git checkout'
 alias gm='git checkout master'
@@ -40,19 +45,16 @@ alias gsubpull='git submodule update --merge'
 alias gsubupdate=gsubpull
 
 # Rebasing
-alias grm='git rebase --onto master --root'
-alias grbm=grm
+alias grbm='git rebase --onto master --root'
+alias grbma="for b in $(glb); do grbm ${b}; done"
+alias grbm!='git rebase --interactive --onto master --root'
+alias grbh!='git rebase --interactive --onto HEAD --root'
 
 alias glog="git --no-pager log --graph --pretty=format:'%C(yellow)%h%Creset -%C(auto)%d%Creset %s %C(dim yellow)(%cd) %C(cyan)<%an>%Creset' --abbrev-commit --date=local --all -n 16"
-
 alias glogless="git log --graph --pretty=format:'%C(yellow)%h%Creset -%C(auto)%d%Creset %s %C(dim yellow)(%cd) %C(cyan)<%an>%Creset' --abbrev-commit --date=local --all"
-
 alias glogalign="git log --graph --pretty=format:'%C(yellow)%h%Creset -%C(auto)%d%Creset %<(60,trunc)%s %C(dim yellow)(%cd) %C(cyan)<%an>%Creset' --abbrev-commit --date=local --all"
-
 alias glogn="git --no-pager log --graph --pretty=format:'%C(yellow)%h%Creset -%C(auto)%d%Creset %s %C(dim yellow)(%cd) %C(cyan)<%an>%Creset' --abbrev-commit --date=local --all -n"
-
 alias glogdiff="git log --graph --pretty=format:'%C(yellow)%h%Creset -%C(auto)%d%Creset %s %C(dim yellow)(%cd) %C(cyan)<%an>%Creset' --abbrev-commit --date=local -p"
-
 alias gloggrep='glogdiff -G'
 
 alias gtheirs="git checkout --theirs"

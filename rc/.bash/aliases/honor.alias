@@ -2,4 +2,7 @@
 # alias sandboxdb="mycli -u root -D sonasandboxdb"
 alias sandboxdb="mysql -u root --auto-rehash -D sonasandboxdb"
 
-alias repost="rbt-log-post -u"
+alias post="rbt-log-post --open"
+alias posth="rbt-log-post --open HEAD"
+alias repost="rbt-log-post --open --update"
+alias reposth="rbt-log-post --open --update HEAD"

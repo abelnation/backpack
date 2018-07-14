@@ -1,0 +1,8 @@
+Host *
+    AddKeysToAgent yes
+    IdentityFile ~/.ssh/id_rsa
+
+Host gm, groovemechanic, groovemechanic.net
+    User aallison
+    HostName groovemechanic.net
+    IdentityFile ~/.ssh/id_rsa.pub

@@ -7,6 +7,7 @@ OK=0
 SCRIPT_DIR=$(cd `dirname "${BASH_SOURCE[0]}"` && pwd)
 BACKUP_DIR=${HOME}/.backpack.backup
 RC_DIR=${SCRIPT_DIR}/rc
+FILES_DIR=${SCRIPT_DIR}/files
 
 # Ignore current and paren dirs when globbing
 GLOBIGNORE=".:.."
@@ -32,3 +33,5 @@ for f in ${RC_DIR}/*; do
 	ln -s $f ${HOME}/$(basename $f)
 done
 
+# Copy specific file templates
+cp ${FILES_DIR} ${HOME}/.ssh/config

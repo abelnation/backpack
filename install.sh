@@ -34,4 +34,9 @@ for f in ${RC_DIR}/*; do
 done
 
 # Copy specific file templates
-cp ${FILES_DIR} ${HOME}/.ssh/config
+
+# ~/.ssh/config
+cp ${FILES_DIR}/ssh_config ${HOME}/.ssh/config
+
+# ~/.oh-my-zsh/plugins/fzf
+cp -r ${FILES_DIR}/fzf ${HOME}/.oh-my-zsh/plugins/

@@ -46,7 +46,7 @@ alias gsubupdate=gsubpull
 
 # Rebasing
 alias grbm='git rebase --onto master --root'
-alias grbma="for b in $(glb); do grbm ${b}; done"
+alias grbma='for b in $(glb); do grbm ${b}; done'
 alias grbm!='git rebase --interactive --onto master --root'
 alias grbh!='git rebase --interactive --onto HEAD --root'
 

@@ -1,0 +1,2 @@
+# Add `subl` CLI tool to PATH
+export PATH="/opt/homebrew/bin:$PATH"
